@@ -1,0 +1,62 @@
+# Node.js modules
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Logs
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+.pnpm/
+.yarn/
+.yarnrc.yml
+
+# IDE settings
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Cache files
+.cache/
+*.cache
+.cache-loader/
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# Vite-specific
+.vite/
+*.vite
+
+# Testing
+coverage/
+*.lcov
+
+# Package lock files (if using Yarn or pnpm, for example)
+package-lock.json
+yarn.lock
+
+# Ignore public folder content that might be generated
+/public/**/*.map
+
+# Ignore compiled output from your src/ directory
+/src/**/*.js.map
+/src/**/*.css.map
+/src/**/*.jsx.map

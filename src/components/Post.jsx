@@ -1,7 +1,11 @@
+
+
 function Post() {
+
+
     return (
         <div>
-            <h1>Pedro Castaneda</h1>
+            <p className="text-3xl font-semibold">Pedro Castaneda</p>
             <p>Desarrollador Frontend</p>
         </div>
     );

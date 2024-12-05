@@ -28,13 +28,15 @@ function PostsList({ isPosting, onStopPosting }) {
             }
 
 
+            {
+                posts.length === 0 && <p className={`${classes.noPosts} text-center font-semibold text-4xl`}>No posts yet. Add one!</p>
+            }
             <ul className={classes.posts}>
                 {
-                    posts.map((post, index) => (
-                        <Post key={index} author={post.author} body={post.body} />
+                    posts.map(({ author, body }, index) => (
+                        <Post key={index} author={author} body={body} />
                     ))
                 }
-                <Post author='Manuel' body='Check out the full course!' />
             </ul>
         </>
 

@@ -6,7 +6,7 @@ function PostsList() {
     return (
     <ul className={classes.posts}>
         <Post author='Pedro Castaneda' body='React.js is awesome!' />
-        <Post author='Manuel' body='Check out the course' />
+        <Post author='Manuel' body='Check out the full course!' />
     </ul>
     );
 }

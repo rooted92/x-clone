@@ -14,7 +14,7 @@ function PostsList({ isPosting, onStopPosting }) {
             setIsFetching(true);
             const response = await fetch('http://localhost:8080/posts');
             const data = await response.json();
-            if(!response.ok) {
+            if (!response.ok) {
                 throw new Error(data.message || 'Failed to fetch posts.');
             }
             setPosts(data.posts);

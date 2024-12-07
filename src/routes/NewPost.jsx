@@ -29,6 +29,7 @@ function NewPost() {
 export default NewPost;
 
 export async function action({ request }) {
+    // this function is called when the form is submitted, the data comes from using the method attribute in the form which creates a POST request object
     const formData = await request.formData();
     const postData = Object.fromEntries(formData); // this creates an object from the form data in a basic way (no nested objects)
     await fetch(
